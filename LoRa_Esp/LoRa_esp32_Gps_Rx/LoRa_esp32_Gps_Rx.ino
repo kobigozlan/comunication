@@ -15,7 +15,7 @@ HardwareSerial Serial1(2);
 #define SS      18   // GPIO18 -- SX127x's CS
 #define RST     14   // GPIO14 -- SX127x's RESET
 #define DI0     26   // GPIO26 -- SX127x's IRQ(Interrupt Request)
-#define BAND    433E6  // 915E6
+#define BAND    425E6  // 915E6
 #define PABOOST true
 int counter = 0;
 long frequency = 433E6;
