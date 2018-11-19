@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.ARMGCC.CPP</ToolchainName>
+    <ProjectGuid>{6f3a43ca-25e5-440e-a1fd-b9677cccc848}</ProjectGuid>
+    <avrdevice>ATSAM3X8E</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>LoRa_RX</AssemblyName>
+    <Name>LoRa_RX</Name>
+    <RootNamespace>LoRa_RX</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress />
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue />
+    <BootSegment>2</BootSegment>
+    <eraseonlaunchrule>1</eraseonlaunchrule>
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.21.0" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <ArmGccCpp>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__HARDWARE_MK20dx256__</Value>
+      <Value>__HARDWARE_MK20DX256__</Value>
+      <Value>ARDUINO=166</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__TEENSY3__</Value>
+      <Value>__MK20DX256__</Value>
+      <Value>TEENSYDUINO=126</Value>
+      <Value>F_CPU=96000000</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_SERIAL</Value>
+      <Value>LAYOUT_US_ENGLISH</Value>
+    </ListValues>
+  </armgcc.compiler.symbols.DefSymbols>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>C:/Users/kobigozlan/Documents/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Atmel/Studio/7.0/Extensions/m5ru31ay.vub/Micro Platforms/default/debuggers</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/SPI/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/SPI</Value>
+      <Value>C:/Users/kobigozlan/Documents/Arduino/libraries/LoRa/utility</Value>
+      <Value>C:/Users/kobigozlan/Documents/Arduino/libraries/LoRa</Value>
+      <Value>../../LoRa_RX</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/avr</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/utils</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
+  <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+  <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+  <armgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__HARDWARE_MK20dx256__</Value>
+      <Value>__HARDWARE_MK20DX256__</Value>
+      <Value>ARDUINO=166</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__TEENSY3__</Value>
+      <Value>__MK20DX256__</Value>
+      <Value>TEENSYDUINO=126</Value>
+      <Value>F_CPU=96000000</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_SERIAL</Value>
+      <Value>LAYOUT_US_ENGLISH</Value>
+    </ListValues>
+  </armgcccpp.compiler.symbols.DefSymbols>
+  <armgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>C:/Users/kobigozlan/Documents/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Atmel/Studio/7.0/Extensions/m5ru31ay.vub/Micro Platforms/default/debuggers</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/SPI/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/SPI</Value>
+      <Value>C:/Users/kobigozlan/Documents/Arduino/libraries/LoRa/utility</Value>
+      <Value>C:/Users/kobigozlan/Documents/Arduino/libraries/LoRa</Value>
+      <Value>../../LoRa_RX</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/avr</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/utils</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3</Value>
+    </ListValues>
+  </armgcccpp.compiler.directories.IncludePaths>
+  <armgcccpp.compiler.optimization.level>Optimize (-O1)</armgcccpp.compiler.optimization.level>
+  <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
+  <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+  <armgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.Libraries>
+  <armgcccpp.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>%24(ProjectDir)\Device_Startup</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.LibrarySearchPaths>
+  <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+  <armgcccpp.linker.miscellaneous.LinkerFlags>-Tsam3x8e_flash.ld</armgcccpp.linker.miscellaneous.LinkerFlags>
+  <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
+  <armgcccpp.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\SAM3X_DFP\1.0.33\include</Value>
+      <Value>%24(PackRepoDir)\arm\cmsis\4.2.0\CMSIS\Include\</Value>
+    </ListValues>
+  </armgcccpp.preprocessingassembler.general.IncludePaths>
+  <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
+</ArmGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3;C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/utils;C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/avr;../../LoRa_RX;C:/Users/kobigozlan/Documents/Arduino/libraries/LoRa;C:/Users/kobigozlan/Documents/Arduino/libraries/LoRa/utility;C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/SPI;C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/SPI/utility;C:/Program Files (x86)/Arduino/libraries;C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries;C:/Program Files (x86)/Atmel/Studio/7.0/Extensions/m5ru31ay.vub/Micro Platforms/default/debuggers;C:/Users/kobigozlan/Documents/Arduino/libraries;C:/Program Files (x86)/Arduino/hardware/hardware/include;;</VMSETTING_IncludePaths>
+    <VisualMicroSettings>
+      <VisualMicroSettings>
+        <ValidatedAS7>1</ValidatedAS7>
+        <arduino.upload.port>COM10</arduino.upload.port>
+      </VisualMicroSettings>
+    </VisualMicroSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <ArmGccCpp>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__HARDWARE_MK20dx256__</Value>
+      <Value>__HARDWARE_MK20DX256__</Value>
+      <Value>ARDUINO=166</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__TEENSY3__</Value>
+      <Value>__MK20DX256__</Value>
+      <Value>TEENSYDUINO=126</Value>
+      <Value>F_CPU=96000000</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_SERIAL</Value>
+      <Value>LAYOUT_US_ENGLISH</Value>
+    </ListValues>
+  </armgcc.compiler.symbols.DefSymbols>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>C:/Users/kobigozlan/Documents/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Atmel/Studio/7.0/Extensions/m5ru31ay.vub/Micro Platforms/default/debuggers</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/SPI/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/SPI</Value>
+      <Value>C:/Users/kobigozlan/Documents/Arduino/libraries/LoRa/utility</Value>
+      <Value>C:/Users/kobigozlan/Documents/Arduino/libraries/LoRa</Value>
+      <Value>../../LoRa_RX</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/avr</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/utils</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
+  <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+  <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+  <armgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__HARDWARE_MK20dx256__</Value>
+      <Value>__HARDWARE_MK20DX256__</Value>
+      <Value>ARDUINO=166</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__TEENSY3__</Value>
+      <Value>__MK20DX256__</Value>
+      <Value>TEENSYDUINO=126</Value>
+      <Value>F_CPU=96000000</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_SERIAL</Value>
+      <Value>LAYOUT_US_ENGLISH</Value>
+    </ListValues>
+  </armgcccpp.compiler.symbols.DefSymbols>
+  <armgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>C:/Users/kobigozlan/Documents/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Atmel/Studio/7.0/Extensions/m5ru31ay.vub/Micro Platforms/default/debuggers</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/SPI/utility</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/SPI</Value>
+      <Value>C:/Users/kobigozlan/Documents/Arduino/libraries/LoRa/utility</Value>
+      <Value>C:/Users/kobigozlan/Documents/Arduino/libraries/LoRa</Value>
+      <Value>../../LoRa_RX</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/avr</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/utils</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3</Value>
+    </ListValues>
+  </armgcccpp.compiler.directories.IncludePaths>
+  <armgcccpp.compiler.optimization.level>Optimize (-O1)</armgcccpp.compiler.optimization.level>
+  <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
+  <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+  <armgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.Libraries>
+  <armgcccpp.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>%24(ProjectDir)\Device_Startup</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.LibrarySearchPaths>
+  <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+  <armgcccpp.linker.miscellaneous.LinkerFlags>-Tsam3x8e_flash.ld</armgcccpp.linker.miscellaneous.LinkerFlags>
+  <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
+  <armgcccpp.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\SAM3X_DFP\1.0.33\include</Value>
+      <Value>%24(PackRepoDir)\arm\cmsis\4.2.0\CMSIS\Include\</Value>
+    </ListValues>
+  </armgcccpp.preprocessingassembler.general.IncludePaths>
+  <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
+</ArmGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3;C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/utils;C:/Program Files (x86)/Arduino/hardware/teensy/avr/cores/teensy3/avr;../../LoRa_RX;C:/Users/kobigozlan/Documents/Arduino/libraries/LoRa;C:/Users/kobigozlan/Documents/Arduino/libraries/LoRa/utility;C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/SPI;C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/SPI/utility;C:/Program Files (x86)/Arduino/libraries;C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries;C:/Program Files (x86)/Atmel/Studio/7.0/Extensions/m5ru31ay.vub/Micro Platforms/default/debuggers;C:/Users/kobigozlan/Documents/Arduino/libraries;C:/Program Files (x86)/Arduino/hardware/hardware/include;;</VMSETTING_IncludePaths>
+    <VisualMicroSettings>
+      <VisualMicroSettings>
+        <ValidatedAS7>1</ValidatedAS7>
+        <arduino.upload.port>COM10</arduino.upload.port>
+      </VisualMicroSettings>
+    </VisualMicroSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="LoRa_RX.ino">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="__vm\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="__vm\.LoRa_RX.vsarduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>

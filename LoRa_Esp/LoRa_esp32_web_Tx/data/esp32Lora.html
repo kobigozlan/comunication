@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html {
+  font-family: Helvetica;
+  display: inline-block;
+  margin: 0px auto;
+  text-align: center;
+}
+h1{
+  color: #0F3376;
+  padding: 2vh;
+}
+p{
+  font-size: 1.5rem;
+}
+.button {
+  display: inline-block;
+  background-color: #008CBA;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 40px;
+  text-decoration: none;
+  font-size: 30px;
+  margin: 2px;
+  cursor: pointer;
+}
+.button2 {
+  background-color: #f44336;
+}
+.btn-group button {
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #3e8e41;
+}
+
+</style>
+</head>
+<body>
+
+  <h1>ESP32 Web Server</h1>
+  <p>LoRa state: <strong> %STATE%</strong></p>
+  <p><a href="/on"><button class="button">ON</button></a></p>
+  <p><a href="/off"><button class="button button2">OFF</button></a></p>
+  
+  <h1>frequency</h1>
+  <p>frequency: <strong> %FREQ%</strong></p>
+  <a href="/f420"><button class="btn-group">420</button></a>
+  <a href="/f425"><button class="btn-group">425</button></a>
+  <a href="/f430"><button class="btn-group">430</button></a>
+  <a href="/f433"><button class="btn-group">433</button></a>
+  <a href="/f435"><button class="btn-group">435</button></a>
+  <a href="/f440"><button class="btn-group">440</button></a>
+  <a href="/f445"><button class="btn-group">445</button></a>
+  <a href="/f450"><button class="btn-group">450</button></a>
+  <a href="/f455"><button class="btn-group">455</button></a>
+  <a href="/f460"><button class="btn-group">460</button></a>
+  
+   <h1>Bandwidth</h1>
+  <p>Bandwidth: <strong> %BW%</strong></p>
+  <a href="/bw7"><button class="btn-group">bw7</button></a>
+  <a href="/bw10"><button class="btn-group">bw10</button></a>
+  <a href="/bw15"><button class="btn-group">bw15</button></a>
+  <a href="/bw20"><button class="btn-group">bw20</button></a>
+  <a href="/bw31"><button class="btn-group">bw31</button></a>
+  <a href="/bw41"><button class="btn-group">bw41</button></a>
+  <a href="/bw62"><button class="btn-group">bw62</button></a>
+  <a href="/bw125"><button class="btn-group">bw125</button></a>
+  <a href="/bw250"><button class="btn-group">bw250</button></a>
+  <a href="/bw500"><button class="btn-group">bw500</button></a>
+  
+  <h1>Spreading Factor </h1>
+  <p>Spreading Factor: <strong> %SF%</strong></p>
+  <a href="/sf6"><button class="btn-group">6</button></a>
+  <a href="/sf7"><button class="btn-group">7</button></a>
+  <a href="/sf8"><button class="btn-group">8</button></a>
+  <a href="/sf9"><button class="btn-group">9</button></a>
+  <a href="/sf10"><button class="btn-group">10</button></a>
+  <a href="/sf11"><button class="btn-group">11</button></a>
+  <a href="/sf12"><button class="btn-group">12</button></a>
+  
+  <h1>CodingRate</h1>
+  <p>CodingRate: <strong> %CR%</strong></p>
+  <a href="/cr4_5"><button class="btn-group">cr4_5</button></a>
+  <a href="/cr4_6"><button class="btn-group">cr4_6</button></a>
+  <a href="/cr4_7"><button class="btn-group">cr4_7</button></a>
+  <a href="/cr4_8"><button class="btn-group">cr4_8</button></a>
+
+
+</body>
+</html>
