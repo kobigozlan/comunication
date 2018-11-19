@@ -18,7 +18,7 @@ HardwareSerial Serial1(2);
 #define BAND    425E6  // 915E6
 #define PABOOST true
 int counter = 0;
-long frequency = 433E6;
+long frequency = 425E6;
 int sf = 9; // from 6 to 12
 long bw = 62; // the closest number to the BW
 int CodingRate = 6; // from 5 to 8
