@@ -2,7 +2,7 @@
 boolean gpsStatus[] = {false, false, false, false, false, false, false};
 unsigned long start;
 
-//HardwareSerial gpsSerial(2);
+//HardwareSerial gpsSerial(Serial1);
 //#define gpsSerial Serial1
 
 //void setup()

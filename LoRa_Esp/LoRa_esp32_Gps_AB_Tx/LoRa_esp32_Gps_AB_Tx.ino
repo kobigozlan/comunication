@@ -35,8 +35,8 @@ void setup() {
   // Serial port for debugging purposes
   Serial.begin(9600);
   delay(1000);
-//  gpsSerial.begin(9600);
- gpsSerial.begin(9600,SERIAL_8N1,16,17,false);
+  gpsSerial.begin(9600);
+// gpsSerial.begin(9600,SERIAL_8N1,0,22,false);
   pinMode(ledPin, OUTPUT);
 
   delay(100);
@@ -68,7 +68,7 @@ void loop() {
 void getGPSData() {
   while (gpsSerial.available()) {
     char x = gpsSerial.read();
-//    Serial.print(x);
+    Serial.print(x);
     gps.encode(x);
   }
 
